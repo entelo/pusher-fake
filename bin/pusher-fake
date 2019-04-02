@@ -44,7 +44,7 @@ PusherFake.configure do |configuration|
     end
 
     options.on("--webhooks HOOKS", Array, "List of webhooks for server") do |hooks|
-      puts hooks
+      p hooks.inspect
       configuration.webhooks = hooks
     end
   end.parse!
